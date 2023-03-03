@@ -1,0 +1,9 @@
+---
+- name: Create Bucket
+  google.cloud.gcp_storage_bucket:
+    name: "{{ bucket_name }}"
+    auth_kind: "{{ auth_kind }}"
+    project: "{{ project }}"
+    service_account_file: "{{ service_account_file }}"
+    location: asia
+    state: present

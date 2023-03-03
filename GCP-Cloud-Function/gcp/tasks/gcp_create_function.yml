@@ -1,0 +1,13 @@
+---
+- name: Create Cloud Function
+  google.cloud.gcp_cloudfunctions_cloud_function:
+    name: "{{ function_name }}"
+    location: asia-south1
+    entry_point: hello
+    source_archive_url: "gs://{{ bucket_name }}/function.zip"
+    trigger_http: 'true'
+    runtime: python310
+    project: "{{ project }}"
+    auth_kind: "{{ auth_kind }}"
+    service_account_file: "{{ service_account_file }}"
+    state: present

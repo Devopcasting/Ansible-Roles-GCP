@@ -1,0 +1,10 @@
+---
+- name: Upload function.zip to bucket
+  google.cloud.gcp_storage_object:
+    project: "{{ project }}"
+    auth_kind: "{{ auth_kind }}"
+    service_account_file: "{{ service_account_file }}"
+    bucket: "{{ bucket_name }}"
+    action: upload
+    src: "{{ role_path }}/files/function.zip"
+    dest: function.zip

@@ -1,0 +1,5 @@
+---
+# defaults file for gcp
+auth_kind: serviceaccount
+project: driven-binder-379415
+service_account_file: "{{ role_path }}/driven-binder-379415-41f19d369ad8.json"

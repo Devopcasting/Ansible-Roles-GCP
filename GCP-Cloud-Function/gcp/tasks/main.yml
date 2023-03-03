@@ -1,0 +1,5 @@
+---
+# tasks file for gcp
+- import_tasks: gcp_create_bucket.yml
+- import_tasks: gcp_create_object.yml
+- import_tasks: gcp_create_function.yml

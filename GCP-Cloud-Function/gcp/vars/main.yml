@@ -1,0 +1,4 @@
+---
+# vars file for gcp
+bucket_name: funix_unixs
+function_name: ansible_cloud_function

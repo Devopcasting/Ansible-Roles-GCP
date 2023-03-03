@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  vars_files:
+    - gcp/vars/main.yml
+    - gcp/defaults/main.yml
+  roles:
+  - gcp
